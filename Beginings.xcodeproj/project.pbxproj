@@ -183,7 +183,6 @@
 				C4FB1E4725CB78420017D72F /* SceneDelegate.swift */,
 				C49CF24C25D8672500134C3E /* Constants.swift */,
 				C4FB1E5025CB78470017D72F /* LaunchScreen.storyboard */,
-				C477720925D1BD6E00B79AAA /* GoogleService-Info.plist */,
 				C4F24F3125D85B780013F126 /* Enums */,
 			);
 			path = App;
@@ -259,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				C4FB1E5325CB78470017D72F /* Info.plist */,
+				C477720925D1BD6E00B79AAA /* GoogleService-Info.plist */,
 				C49CF25325DBDAA600134C3E /* App */,
 				C47772B525D5AFBD00B79AAA /* Navigation */,
 				C477728B25D45ED200B79AAA /* Storyboards */,
