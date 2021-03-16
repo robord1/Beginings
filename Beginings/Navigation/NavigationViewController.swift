@@ -99,7 +99,7 @@ extension NavigationViewController {
 extension NavigationViewController: ScrollViewControllerDelegate {
   
   var viewControllers: [UIViewController?] {
-    return [createViewController,profileViewController, homeViewController, eventViewController]
+    return [homeViewController, eventViewController]
   }
   
   var initialViewController: UIViewController {

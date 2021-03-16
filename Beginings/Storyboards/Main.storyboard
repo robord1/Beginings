@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R0U-jM-XWU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,7 +11,7 @@
         <!--Navigation View Controller-->
         <scene sceneID="IPw-Ow-BR6">
             <objects>
-                <viewController storyboardIdentifier="navId" id="R0U-jM-XWU" customClass="NavigationViewController" customModule="Snapchat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="navId" id="R0U-jM-XWU" customClass="NavigationViewController" customModule="Beginings" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vgi-DG-lEE"/>
                         <viewControllerLayoutGuide type="bottom" id="Nef-Hc-wRr"/>
@@ -32,7 +31,7 @@
                                     <segue destination="c4y-VH-0th" kind="embed" id="Yvd-3z-x0e"/>
                                 </connections>
                             </containerView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZqH-dm-H1t" customClass="NavigationView" customModule="Snapchat" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZqH-dm-H1t" customClass="NavigationView" customModule="Beginings" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXK-fs-akc">
@@ -227,7 +226,7 @@
         <!--Nav Scroll View Controller-->
         <scene sceneID="Fcj-sS-dGO">
             <objects>
-                <viewController storyboardIdentifier="ScrollViewController" id="c4y-VH-0th" customClass="NavScrollViewController" customModule="Snapchat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScrollViewController" id="c4y-VH-0th" customClass="NavScrollViewController" customModule="Beginings" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5mC-If-8Gf"/>
                         <viewControllerLayoutGuide type="bottom" id="neU-LH-LBs"/>
