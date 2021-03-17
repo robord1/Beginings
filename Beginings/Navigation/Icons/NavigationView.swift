@@ -71,7 +71,7 @@ class NavigationView: UIView {
   @IBOutlet var discoverIconGrayView: UIImageView!
   @IBOutlet var discoverIconHorizontalConstraint: NSLayoutConstraint!
   
-  @IBOutlet var indicator: UIView!
+  //@IBOutlet var indicator: UIView!
   
   @IBOutlet var colorView: UIView!
   
@@ -93,7 +93,7 @@ class NavigationView: UIView {
   // MARK: - View Life Cycle
   override func layoutSubviews() {
     super.layoutSubviews()
-    indicator.layer.cornerRadius = indicator.bounds.height / 2
+    //indicator.layer.cornerRadius = indicator.bounds.height / 2
   }
   
   override func awakeFromNib() {
@@ -121,12 +121,12 @@ class NavigationView: UIView {
     cameraButtonWhiteView.alpha = 1 - offset
     cameraButtonGrayView.alpha = offset
 
-    animateIconColor(offset: offset)
-    animateIconPosition(offset: offset)
-    animateIconScale(offset: offset)
-    animateIconCenter(offset: offset)
+    //animateIconColor(offset: offset)
+    //animateIconPosition(offset: offset)
+    //animateIconScale(offset: offset)
+    //animateIconCenter(offset: offset)
 
-    animateBottomBar(percent: percent)
+    //animateBottomBar(percent: percent)
 
     layoutIfNeeded()
   }

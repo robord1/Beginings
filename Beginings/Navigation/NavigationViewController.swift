@@ -36,26 +36,21 @@ class NavigationViewController: UIViewController {
   
   // MARK: - Properties
   var scrollViewController: NavScrollViewController!
-  let pb = UIStoryboard(name: "Profile", bundle: nil)
-  let eb = UIStoryboard(name: "Event", bundle: nil)
+  let tb = UIStoryboard(name: "Toolbox", bundle: nil)
   let hb = UIStoryboard(name: "Home", bundle: nil)
-  let cb = UIStoryboard(name: "Create", bundle: nil)
+
     
-  lazy var profileViewController: UIViewController! = {
-    return pb.instantiateViewController(withIdentifier: "profileId")
-  }()
+ 
   
-  lazy var eventViewController: UIViewController! = {
-    return eb.instantiateViewController(withIdentifier: "eventId")
+  lazy var toolboxViewController: UIViewController! = {
+    return tb.instantiateViewController(withIdentifier: "toolbox")
   }()
   
   lazy var homeViewController: UIViewController! = {
     return hb.instantiateViewController(withIdentifier: "homeId")
   }()
 
-    lazy var createViewController: UIViewController! = {
-      return cb.instantiateViewController(withIdentifier: "createId")
-    }()
+
   
   //var cameraViewController: CameraViewController!
   
@@ -83,11 +78,11 @@ extension NavigationViewController {
   @IBAction func handleChatIconTap(_ sender: UITapGestureRecognizer) {
     
     
-    scrollViewController.setController(to: profileViewController, animated: true)
+    //scrollViewController.setController(to: profileViewController, animated: true)
   }
   
   @IBAction func handleDiscoverIconTap(_ sender: UITapGestureRecognizer) {
-    scrollViewController.setController(to: eventViewController, animated: true)
+    scrollViewController.setController(to: toolboxViewController, animated: true)
   }
   
   @IBAction func handleCameraButton(_ sender: UITapGestureRecognizer) {
@@ -99,7 +94,7 @@ extension NavigationViewController {
 extension NavigationViewController: ScrollViewControllerDelegate {
   
   var viewControllers: [UIViewController?] {
-    return [homeViewController, eventViewController]
+    return [homeViewController, toolboxViewController]
   }
   
   var initialViewController: UIViewController {

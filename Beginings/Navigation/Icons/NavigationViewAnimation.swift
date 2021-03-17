@@ -83,8 +83,8 @@ extension NavigationView {
     
     // use percent as it has the correct sign
     let transform = indicatorTransform.translatedBy(x: distance * percent, y: 0)
-    indicator.transform = transform.concatenating(scaleTransform)
-    indicator.alpha = offset
+    //indicator.transform = transform.concatenating(scaleTransform)
+    //indicator.alpha = offset
   }
   
 }

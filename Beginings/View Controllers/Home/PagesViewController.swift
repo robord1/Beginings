@@ -1,13 +1,13 @@
 //
-//  PageOwnerViewController.swift
+//  PagesViewController.swift
 //  Beginings
 //
-//  Created by rob ord on 13/02/2021.
+//  Created by rob ord on 17/03/2021.
 //
 
 import UIKit
 
-class PageOwnerViewController: UIViewController {
+class PagesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

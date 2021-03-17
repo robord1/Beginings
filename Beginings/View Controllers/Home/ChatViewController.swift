@@ -1,13 +1,18 @@
 //
-//  TopBar.swift
+//  ChatViewController.swift
 //  Beginings
 //
-//  Created by rob ord on 22/02/2021.
+//  Created by rob ord on 17/03/2021.
 //
 
 import UIKit
 
-class TopBar: UIView {
+class ChatViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
 
     /*
     // Only override draw() if you perform custom drawing.

@@ -1,26 +1,14 @@
 //
-//  AppNavigationViewController.swift
+//  NotificationsViewController.swift
 //  Beginings
 //
-//  Created by rob ord on 10/02/2021.
+//  Created by rob ord on 17/03/2021.
 //
 
 import UIKit
-import FirebaseAuth
-class AppNavigationViewController: UIViewController {
 
-    
-    @IBOutlet weak var logoutButton: UIButton!
-    
-    @IBAction func logoutTapped(_ sender: Any) {
-        do {
-            try Auth.auth().signOut()
-            
-        } catch  {
-            
-        }
-    }
-    
+class NotificationsViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
