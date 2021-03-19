@@ -11,12 +11,15 @@
 		C42249BA260268AE0024DD15 /* ToolBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42249B9260268AE0024DD15 /* ToolBoxViewController.swift */; };
 		C42249C426026A290024DD15 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42249C326026A290024DD15 /* Feed.storyboard */; };
 		C42249C726026A3D0024DD15 /* Pages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42249C626026A3D0024DD15 /* Pages.storyboard */; };
-		C42249CA26026A510024DD15 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42249C926026A510024DD15 /* FeedViewController.swift */; };
+		C42249CA26026A510024DD15 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42249C926026A510024DD15 /* FeedTableViewController.swift */; };
 		C42249CD26026A620024DD15 /* PagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42249CC26026A620024DD15 /* PagesViewController.swift */; };
 		C42249D026026A770024DD15 /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42249CF26026A770024DD15 /* Notifications.storyboard */; };
 		C42249D326026A890024DD15 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42249D226026A890024DD15 /* NotificationsViewController.swift */; };
-		C42249D9260270AB0024DD15 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42249D8260270AB0024DD15 /* Profile.storyboard */; };
 		C42249DC260270C30024DD15 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42249DB260270C30024DD15 /* ProfileViewController.swift */; };
+		C42249E02603A8390024DD15 /* Home Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42249DF2603A8380024DD15 /* Home Icons.xcassets */; };
+		C42249E42603B3580024DD15 /* Colours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42249E32603B3580024DD15 /* Colours.xcassets */; };
+		C42249EC2603BAD30024DD15 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42249EB2603BAD30024DD15 /* Profile.storyboard */; };
+		C42249F12604CB960024DD15 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42249F02604CB950024DD15 /* PostViewController.swift */; };
 		C42861AE2601B2F3005A6442 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42861AD2601B2F3005A6442 /* ChatViewController.swift */; };
 		C42861B32601B66E005A6442 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42861B22601B66E005A6442 /* Chat.storyboard */; };
 		C477720A25D1BD6E00B79AAA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C477720925D1BD6E00B79AAA /* GoogleService-Info.plist */; };
@@ -59,12 +62,15 @@
 		C42249B9260268AE0024DD15 /* ToolBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBoxViewController.swift; sourceTree = "<group>"; };
 		C42249C326026A290024DD15 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		C42249C626026A3D0024DD15 /* Pages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pages.storyboard; sourceTree = "<group>"; };
-		C42249C926026A510024DD15 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		C42249C926026A510024DD15 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		C42249CC26026A620024DD15 /* PagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesViewController.swift; sourceTree = "<group>"; };
 		C42249CF26026A770024DD15 /* Notifications.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notifications.storyboard; sourceTree = "<group>"; };
 		C42249D226026A890024DD15 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
-		C42249D8260270AB0024DD15 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		C42249DB260270C30024DD15 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C42249DF2603A8380024DD15 /* Home Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Home Icons.xcassets"; sourceTree = "<group>"; };
+		C42249E32603B3580024DD15 /* Colours.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colours.xcassets; sourceTree = "<group>"; };
+		C42249EB2603BAD30024DD15 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		C42249F02604CB950024DD15 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		C42861AD2601B2F3005A6442 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		C42861B22601B66E005A6442 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		C477720925D1BD6E00B79AAA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -140,10 +146,20 @@
 			path = SignIn;
 			sourceTree = "<group>";
 		};
+		C42249EF2604CB770024DD15 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				C42249F02604CB950024DD15 /* PostViewController.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
 		C477722C25D1C83700B79AAA /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C42249EF2604CB770024DD15 /* Post */,
 				C4E71D242601B02B00C2A023 /* Home */,
+				C47772B525D5AFBD00B79AAA /* Navigation */,
 				C42249B8260268550024DD15 /* Toolbox */,
 				C42249BD2602696B0024DD15 /* SignIn */,
 			);
@@ -161,8 +177,8 @@
 		C477728B25D45ED200B79AAA /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				C4F1E8D0260265EF00B70EC7 /* Toolbox */,
 				C4F1E8CF260265BC00B70EC7 /* Home */,
+				C4F1E8D0260265EF00B70EC7 /* Toolbox */,
 				C4F1E8CE2602659900B70EC7 /* App */,
 			);
 			path = Storyboards;
@@ -191,6 +207,8 @@
 			isa = PBXGroup;
 			children = (
 				C4FB1E4E25CB78470017D72F /* Assets.xcassets */,
+				C42249DF2603A8380024DD15 /* Home Icons.xcassets */,
+				C42249E32603B3580024DD15 /* Colours.xcassets */,
 			);
 			path = "Media assets";
 			sourceTree = "<group>";
@@ -212,7 +230,7 @@
 			children = (
 				C47772AC25D5AF7A00B79AAA /* HomeViewController.swift */,
 				C42249DB260270C30024DD15 /* ProfileViewController.swift */,
-				C42249C926026A510024DD15 /* FeedViewController.swift */,
+				C42249C926026A510024DD15 /* FeedTableViewController.swift */,
 				C42249CC26026A620024DD15 /* PagesViewController.swift */,
 				C42861AD2601B2F3005A6442 /* ChatViewController.swift */,
 				C42249D226026A890024DD15 /* NotificationsViewController.swift */,
@@ -234,7 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				C47772C325D5B0EF00B79AAA /* Home.storyboard */,
-				C42249D8260270AB0024DD15 /* Profile.storyboard */,
+				C42249EB2603BAD30024DD15 /* Profile.storyboard */,
 				C42249C326026A290024DD15 /* Feed.storyboard */,
 				C42249C626026A3D0024DD15 /* Pages.storyboard */,
 				C42861B22601B66E005A6442 /* Chat.storyboard */,
@@ -316,7 +334,6 @@
 				C4FB1E5325CB78470017D72F /* Info.plist */,
 				C477720925D1BD6E00B79AAA /* GoogleService-Info.plist */,
 				C49CF25325DBDAA600134C3E /* App */,
-				C47772B525D5AFBD00B79AAA /* Navigation */,
 				C477728B25D45ED200B79AAA /* Storyboards */,
 				C477722C25D1C83700B79AAA /* View Controllers */,
 				C4F24F1B25D850F50013F126 /* Model */,
@@ -395,16 +412,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C42861B32601B66E005A6442 /* Chat.storyboard in Resources */,
+				C42249E42603B3580024DD15 /* Colours.xcassets in Resources */,
 				C4FB1E5225CB78470017D72F /* LaunchScreen.storyboard in Resources */,
 				C477720A25D1BD6E00B79AAA /* GoogleService-Info.plist in Resources */,
 				C47772C425D5B0EF00B79AAA /* Home.storyboard in Resources */,
 				C4FB1E4F25CB78470017D72F /* Assets.xcassets in Resources */,
-				C42249D9260270AB0024DD15 /* Profile.storyboard in Resources */,
 				C47772CD25D5B15000B79AAA /* Main.storyboard in Resources */,
 				C47772C725D5B10E00B79AAA /* Toolbox.storyboard in Resources */,
 				C4F1E8C8260255A300B70EC7 /* Search.storyboard in Resources */,
 				C42249C426026A290024DD15 /* Feed.storyboard in Resources */,
+				C42249E02603A8390024DD15 /* Home Icons.xcassets in Resources */,
 				C4FB1E4D25CB78420017D72F /* Initial.storyboard in Resources */,
+				C42249EC2603BAD30024DD15 /* Profile.storyboard in Resources */,
 				C42249C726026A3D0024DD15 /* Pages.storyboard in Resources */,
 				C42249D026026A770024DD15 /* Notifications.storyboard in Resources */,
 			);
@@ -460,7 +479,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4F1E8CB260255D000B70EC7 /* SearchViewController.swift in Sources */,
-				C42249CA26026A510024DD15 /* FeedViewController.swift in Sources */,
+				C42249CA26026A510024DD15 /* FeedTableViewController.swift in Sources */,
 				C47772BA25D5AFEB00B79AAA /* NavigationViewController.swift in Sources */,
 				C49CF24725D8642A00134C3E /* Relation.swift in Sources */,
 				C4FB1E4625CB78420017D72F /* AppDelegate.swift in Sources */,
@@ -483,6 +502,7 @@
 				C477723825D1DE5A00B79AAA /* Utilities.swift in Sources */,
 				C4F24F2325D854C10013F126 /* Post.swift in Sources */,
 				C4F24F3D25D862420013F126 /* Save.swift in Sources */,
+				C42249F12604CB960024DD15 /* PostViewController.swift in Sources */,
 				C4F24F4125D862C10013F126 /* RelatedUser.swift in Sources */,
 				C4F24F2625D854D30013F126 /* Story.swift in Sources */,
 				C42249D326026A890024DD15 /* NotificationsViewController.swift in Sources */,

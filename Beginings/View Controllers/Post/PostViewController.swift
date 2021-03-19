@@ -1,23 +1,14 @@
 //
-//  FeedViewController.swift
+//  PostViewController.swift
 //  Beginings
 //
-//  Created by rob ord on 17/03/2021.
+//  Created by rob ord on 19/03/2021.
 //
 
 import UIKit
 
-class FeedViewController: UIViewController {
-//    @IBOutlet weak var logoutButton: UIButton!
-//
-//    @IBAction func logoutButtonTapped(_ sender: Any) {
-//        do {
-//            try Auth.auth().signOut()
-//
-//        } catch  {
-//
-//        }
-//    }
+class PostViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

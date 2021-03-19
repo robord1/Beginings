@@ -22,7 +22,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="835-ch-9k3">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
                                 <accessibility key="accessibilityConfiguration" label="Background Color View"/>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ye3-zo-fIT" userLabel="Scroller Container">
@@ -171,7 +171,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="25j-gS-wNK"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
                         <constraints>
                             <constraint firstItem="835-ch-9k3" firstAttribute="top" secondItem="6op-6y-ebd" secondAttribute="top" id="A2r-XE-1MX"/>
                             <constraint firstItem="ZqH-dm-H1t" firstAttribute="leading" secondItem="6op-6y-ebd" secondAttribute="leading" id="CD2-pv-4E4"/>
@@ -223,7 +223,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="nqs-mM-ajJ"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RtO-eZ-PjC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2236,8 +2237,8 @@ PZRa5lrrWu5a8FryWvRa+Vr7Wv2IT4hUiGOIZ4hyiHqIh4iciKGIpYiniKmIq4i0iLyIvojAiMKIxJow
 mjWaPZpAmkWaTQAAAAAAAAIBAAAAAAAAAI8AAAAAAAAAAAAAAAAAAJpQA
 </mutableData>
         </image>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

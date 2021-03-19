@@ -1,16 +1,33 @@
 import UIKit
 
+
+
+
+
 class HomeViewController: UIViewController {
 
     //var homeNav: HomeNavigationViewController
     
     @IBOutlet var homeView: UIView!
-
+    @IBOutlet weak var homeMenuVstack: UIStackView!
+    
     @IBOutlet weak var containerView: UIView!
     
 //    @IBOutlet weak var containerView: UIView!
     
-    
+    var menuStatus: Bool = true{
+        didSet{
+            if menuStatus == true{
+                homeMenuVstack.isHidden = false
+                newButton.isHidden = false
+            }else{
+                homeMenuVstack.isHidden = true
+                newButton.isHidden = true
+            }
+        }
+    }
+
+
 
     @IBOutlet weak var mainMenuVStack: UIStackView!
     @IBOutlet weak var profileHStack: UIStackView!
@@ -23,17 +40,19 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var nameButtom: UIButton!
     @IBOutlet weak var usernameButton: UIButton!
     @IBOutlet weak var ppImageButton: UIButton!
+    @IBOutlet weak var newButton: UIButton!
     
-
+    
     let profileSb = UIStoryboard(name: "Profile", bundle: nil)
     lazy var profileViewController: ProfileViewController! = {
         return profileSb.instantiateViewController(withIdentifier: "pro") as! ProfileViewController
     }()
     
     let feedSb = UIStoryboard(name: "Feed", bundle: nil)
-    lazy var feedViewController: FeedViewController! = {
-        return feedSb.instantiateViewController(withIdentifier: "feed") as! FeedViewController
+    lazy var feedViewController: FeedTableViewController! = {
+        return feedSb.instantiateViewController(withIdentifier: "feed") as! FeedTableViewController
     }()
+    
     
     let pagesSb = UIStoryboard(name: "Pages", bundle: nil)
     lazy var pagesViewController: PagesViewController! = {
@@ -44,6 +63,7 @@ class HomeViewController: UIViewController {
     lazy var chatViewController: ChatViewController! = {
         return chatSb.instantiateViewController(withIdentifier: "chat") as! ChatViewController
     }()
+    
     
     let notSb = UIStoryboard(name: "Notifications", bundle: nil)
     lazy var notViewController: NotificationsViewController! = {
@@ -58,19 +78,24 @@ class HomeViewController: UIViewController {
     
     
     
-    
+    //MARK: VIEW DID LOAD
   override func viewDidLoad() {
     super.viewDidLoad()
     setupMenu()
     setupContainer()
     setupSubViews()
     
-  }
     
+    
+
+    
+    
+  }
+
 
     @IBAction func streamButtonTapped(_ sender: Any) {
         containerView.bringSubviewToFront(feedViewController.view)
-        
+ 
     }
     @IBAction func pageButtonTapped(_ sender: Any) {
         containerView.bringSubviewToFront(pagesViewController.view)
@@ -96,12 +121,28 @@ class HomeViewController: UIViewController {
 
     }
     
+    
+    @IBAction func newButtonTapped(_ sender: Any) {
+        print("new")
+    }
+    
+    
+    func isHomeMenuVisible(state: Bool)
+    {
+        menuStatus = state
+    }
+    
+    
+    
+    
+    //MARK: SETUP UI
+    
     func setupContainer(){
         containerView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             containerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
             containerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
-            containerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 170),
+            containerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
             containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
            ])
     }
@@ -115,7 +156,12 @@ class HomeViewController: UIViewController {
         ppImageButton.layer.cornerRadius = ppImageButton.frame.size.width/2
         ppImageButton.clipsToBounds = true
         
+        homeMenuVstack.layer.borderWidth = 1
+        homeMenuVstack.layer.borderColor = UIColor.darkGray.cgColor
+        
     }
+    
+
     
     func setupSubViews(){
         addChild(searchViewController)
@@ -177,16 +223,23 @@ class HomeViewController: UIViewController {
         feedViewController.view.translatesAutoresizingMaskIntoConstraints = false
         containerView.addSubview(feedViewController.view)
         
+//        NSLayoutConstraint.activate([
+//            feedViewController.view.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
+//            feedViewController.view.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
+//            feedViewController.view.topAnchor.constraint(equalTo: containerView.topAnchor),
+//            feedViewController.view.bottomAnchor.constraint(equalTo: containerView.bottomAnchor)
+//        ])
+        
+
+        feedViewController.homeVC = self
         NSLayoutConstraint.activate([
-            feedViewController.view.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
-            feedViewController.view.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
-            feedViewController.view.topAnchor.constraint(equalTo: containerView.topAnchor),
-            feedViewController.view.bottomAnchor.constraint(equalTo: containerView.bottomAnchor)
+            feedViewController.tableView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
+            feedViewController.tableView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
+            feedViewController.tableView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: -100),
+            feedViewController.tableView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor)
         ])
         
-
         
-
     }
     
 
